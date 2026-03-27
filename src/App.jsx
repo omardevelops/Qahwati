@@ -12,7 +12,7 @@ import BrewForm from './pages/brews/BrewForm.jsx';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Qahwati">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
