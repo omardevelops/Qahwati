@@ -12,7 +12,7 @@ import BrewForm from './pages/brews/BrewForm.jsx';
 
 function App() {
   return (
-    <BrowserRouter basename="/Qahwati">
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
